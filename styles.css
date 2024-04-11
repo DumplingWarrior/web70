@@ -1,0 +1,183 @@
+/* General Styles */
+
+/* Workouts Page Styles */
+body {
+    font-family: Arial, sans-serif; /* Add font-family property to maintain consistency */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Additional styles specific to the workouts page can be added here */
+
+
+header {
+    font-family: "Permanent Marker", cursive;
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent dark background */
+    color: white;
+    text-align: center;
+    padding: 1em;
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensure the header stays on top of other content */
+}
+
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    margin: 120px 20px 20px; /* Add top margin to create space for the fixed header */
+    padding-top: 20px; /* Adjust padding to create space for the header */
+}
+
+/* Welcome Section */
+
+#welcome {
+    background-image: url('images/img1.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0; /* Adjust padding as needed */
+}
+
+.welcome-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.welcome-content h1 {
+    font-size: 36px;
+}
+
+.welcome-content p {
+    font-size: 18px;
+}
+
+/* Features Section */
+
+#features {
+    display: flex;
+    flex-direction: column; /* Change to vertical layout */
+    align-items: center; /* Center items horizontally */
+    margin-top: 20px;
+}
+
+.feature {
+    width: 100%; /* Adjust width to fill the container */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.feature img {
+    max-width: 200px; /* Set maximum width for images */
+    height: auto;
+}
+
+.feature h3 {
+    margin-top: 10px;
+}
+
+.feature p {
+    font-size: 16px;
+}
+
+/* Footer */
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Contact Form Section */
+
+#contact-form {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-top: 50px; /* Add space between welcome content and form */
+}
+
+.form-container {
+    background-color: #333; /* Dark grey background color */
+    color: white; /* White font color */
+    padding: 40px; /* Increase padding for larger form */
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 20px; /* Increase margin for more spacing */
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 15px; /* Increase padding for larger input fields */
+    margin-bottom: 30px; /* Increase margin for more spacing */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #fff; /* White button background color */
+    color: #333; /* Dark grey button text color */
+    border: none;
+    padding: 15px 30px; /* Increase padding for larger button */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #ddd; /* Light grey button hover background color */
+}
+
+/* Example CSS for pseudo-elements in the footer */
+footer::before {
+    content: "Footer Element 1";
+    display: block;
+    color: #999; /* Adjust color to make it less visible */
+    font-size: 14px; /* Adjust font size */
+    margin-top: 10px; /* Add margin to separate from footer content */
+}
+
+footer::after {
+    content: "Footer Element 2";
+    display: block;
+    color: #999; /* Adjust color to make it less visible */
+    font-size: 14px; /* Adjust font size */
+    margin-top: 10px; /* Add margin to separate from footer content */
+}
